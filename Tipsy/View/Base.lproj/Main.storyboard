@@ -56,6 +56,7 @@
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ySS-Gu-tzf">
                                         <rect key="frame" x="28" y="93.5" width="94" height="32"/>
+                                        <color key="tintColor" red="0.30196079609999998" green="0.65882354970000001" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ty8-w6-1nc"/>
                                         </connections>

@@ -49,7 +49,7 @@ class TipViewController: UIViewController {
         
         let tipPercentage = tipCalculator.calculatePercentageAmount(sender.titleLabel?.text)
         let totalBill = Double(billTextField.text!) ?? 0.0
-        let split = Int(splitNumberLabel.text!) ?? 2
+        let split = Int(splitNumberLabel.text!) ?? 1
         
         tipCalculator.bill = Bill(tip: tipPercentage, totalBill: totalBill, split: split)
     }
@@ -57,6 +57,7 @@ class TipViewController: UIViewController {
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         splitNumberLabel.text = String(format: "%.0f", sender.value)
+        tipCalculator.bill?.split = Int(splitNumberLabel.text!) ?? 1
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
