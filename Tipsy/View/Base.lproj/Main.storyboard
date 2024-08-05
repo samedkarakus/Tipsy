@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hsr-4j-bfb">
-                                <rect key="frame" x="132" y="587.5" width="150" height="125.5"/>
+                                <rect key="frame" x="132" y="597.5" width="150" height="125.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Split" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-6u-P6i">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
@@ -75,11 +75,11 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-G0-szK">
-                                                <rect key="frame" x="56" y="30" width="200" height="75"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" background="dol" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-G0-szK">
+                                                <rect key="frame" x="68.5" y="30" width="175" height="75"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="764-aF-JNt"/>
+                                                    <constraint firstAttribute="width" constant="175" id="764-aF-JNt"/>
                                                     <constraint firstAttribute="height" constant="75" id="jc2-Ya-viS"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,7 +184,7 @@
                             <constraint firstItem="hsr-4j-bfb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GLC-gU-XqD"/>
                             <constraint firstItem="hfN-xL-JDP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IcR-q7-AbW"/>
                             <constraint firstItem="o33-Cb-97h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NRP-wj-Xdb"/>
-                            <constraint firstItem="yYD-Sb-00A" firstAttribute="top" secondItem="hsr-4j-bfb" secondAttribute="bottom" constant="75" id="PdS-Jq-KMb"/>
+                            <constraint firstItem="yYD-Sb-00A" firstAttribute="top" secondItem="hsr-4j-bfb" secondAttribute="bottom" constant="65" id="PdS-Jq-KMb"/>
                             <constraint firstItem="lPn-iV-kYY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TrB-6g-Tjm"/>
                             <constraint firstItem="yYD-Sb-00A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="YTn-oC-EGe"/>
                             <constraint firstItem="hfN-xL-JDP" firstAttribute="centerX" secondItem="hsr-4j-bfb" secondAttribute="centerX" id="cMu-dR-uz4"/>
@@ -327,5 +327,6 @@
     </scenes>
     <resources>
         <image name="Ticket" width="300" height="418.5"/>
+        <image name="dol" width="128" height="128"/>
     </resources>
 </document>

@@ -28,6 +28,7 @@ class TipViewController: UIViewController {
         billAmountArea.layer.shadowOpacity = 0.1
         billAmountArea.layer.shadowOffset = CGSize(width: 2, height: 2)
         billAmountArea.layer.shadowRadius = 10
+        addLeftIconToTextField()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,6 +37,18 @@ class TipViewController: UIViewController {
             destinationVC.totalBill = tipCalculator.getTotalBill()
             destinationVC.settings = tipCalculator.getSettings()
         }
+    }
+    
+    func addLeftIconToTextField() {
+        let iconView = UIImageView(frame: CGRect(x: 20, y: 0, width: 20, height: 30))
+        iconView.image = UIImage(systemName: "dollarsign")
+        iconView.tintColor = UIColor.black
+        
+        let iconContainerView: UIView = UIView(frame: CGRect(x: 20, y: 0, width: 20, height: 30))
+        iconContainerView.addSubview(iconView)
+        
+        billTextField.leftView = iconContainerView
+        billTextField.leftViewMode = .always
     }
 
     @IBAction func tipChanged(_ sender: UIButton) {
